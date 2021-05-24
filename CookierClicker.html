@@ -12,37 +12,33 @@
 
                         <div class= "ClickerSection">
                             <h2>Daniel's Bakery</h2>
-                            <h2>Cookies Clicked: 0</h2>
+                            <h2 id="ClickCount"></h2>
                             <div class="CookieCenter">
-                                <button class="CookieButton"></button>
+                                <button class="CookieButton" onclick="increaseCount()"></button>
                             </div>
                         </div>
                             
 
                         <div class= "LogSection">
                             <h2>Statistics</h2>
-                            <h4>Number of Clicks: 0</h4>
+                            <h4 id="statClickCount"></h4>
                             <h4>Number of Upgrades: 0</h4>
-                            <h4>Game Duration: 0</h4>
+                            <h4 id="secondsCount">Game duration (seconds): 0</h4>
                             <h2>Log Section</h2>
-                            <ul>
-                                <li>List Item 1</li>
-                                <li>List Item 2</li>
-                                <li>List Item 3</li>
-                                <li>List Item 4</li>
+                            <ul id="LogUL">
                             </ul>
                         </div>
                             
 
                         <div class= "UpgradeSection">
                             <h2>Upgrade Section</h2>
-                            <button class="Cursor"></button>
+                            <button class="Cursor" onclick="purchaseCursor()"></button>
                             <p>Cursor 10 Cookies - 1 Click Every 10 Seconds</p>
-                            <button class="Grandma"></button>
+                            <button class="Grandma" onclick="purchaseGrandma()"></button>
                             <p>Grandma 25 Cookies - 5 Clicks Every 10 Seconds</p>
-                            <button class="Farm"></button>
+                            <button class="Farm" onclick="purchaseFarm()"></button>
                             <p>Farm 50 Cookies - 25 Clicks Every 10 Seconds</p>
-                            <button class="Mine"></button>
+                            <button class="Mine" onclick="purchaseMine()"></button>
                             <p>Mine 100 Cookies - 50 Clicks Every 10 Seconds</p>
                         </div>
                 
@@ -50,4 +46,5 @@
             </div>
         </div>
     </body>
+    <script src="apps.js"></script>
 </html>
